@@ -1,0 +1,121 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*body {
+  background-image: linear-gradient(to top right, rgba(#00bfff, #ffffff, 0.8));
+}*/
+.container1 { 
+  /*position: relative;*/
+  /*background-color: white;  */
+  /*z-index: 1;*/
+}
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100vh;
+  /*width: auto;
+  height: 100vh;*/
+  z-index: -100;
+  opacity: 0.9;
+}
+
+
+#main-title {
+  font-family: "Railway", sans-serif;
+  position: absolute;
+  font-size: 4rem;
+  top: 30%;
+  left: 20%;
+  transform: translate(-1.5rem);
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+#sub-title {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  font-size: 3rem;
+  top: 45%;
+  left: 20%;
+transform: translate(-1.2rem, 4rem);
+letter-spacing: 2px;
+font-weight: 800;
+color: white;
+}
+
+#circle-choice {
+  text-align: center;
+}
+
+#circle-chocie .contents {
+  position: relative;
+  height: 800px;
+  /*z-index: 999999;*/
+}
+
+#circle-choice .contents .wrap {
+  position: absolute;
+  top: 66%;
+  left: 10%;
+  transform: translateY(-66%, -10%);
+  width: 100%;
+  height: auto;
+  z-index: 999999;
+}
+
+span.icon {
+
+  display: block;
+  /*margin: 0 auto;*/
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 12rem;
+  height: 12rem;
+  line-height: 120px;
+  font-size: 3rem;
+    border-radius: 100%;
+    position: relative;
+    border: solid 3px #fff;
+    color: #fff;
+    /*padding-bottom: 40px;*/
+}
+
+span.icon:before {
+  display: block;
+  content: ' ';
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  left: 50%;
+    top: 50%;
+     transform: translate(-50%, -50%) scale(1);
+     border-radius: 100%;  
+}
+
+span.one:hover {
+  transition: all 250ms ease;
+  background: blueviolet;
+  opacity: 0.5;
+}
+span.two:hover {
+  transition: all 250ms ease;
+  background: yellow;
+  opacity: 0.5;
+}
+span.three:hover {
+  transition: all 250ms ease;
+  background: greenyellow;
+  opacity: 0.5;
+}
+span.four:hover {
+  transition: all 250ms ease;
+  background: blue;
+  opacity: 0.5;
+}
