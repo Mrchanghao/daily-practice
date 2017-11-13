@@ -1,0 +1,35 @@
+.container {
+  padding: 50px;
+}
+
+a, a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+  margin-right: 10px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 40%;
+  background: transparent;
+  -webkit-transition: width .2s ease, background .2s ease;
+          transition: width .2s ease, background .2s ease;
+}
+
+li:hover:after {
+  width: 100%;
+  background: blue;
+}
