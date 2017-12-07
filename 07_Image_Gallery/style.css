@@ -1,0 +1,20 @@
+body {
+  padding-top: 70px;
+}
+
+.container .jumbotron {
+  color: #2c3e50;
+}
+
+body .navbar-inverse {
+  background-color: #2c3e50;
+}
+
+body .navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+body .navbar-inverse .navbar-brand {
+  color: white;
+}
+/*부트스트랩 상속 문제가 잘 이해가 안감*/
