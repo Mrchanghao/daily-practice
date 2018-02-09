@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+body{
+  margin: 1.25rem;
+  padding: 0;
+  background-color: darkgray;
+
+}
+
+.container {
+  max-width: 47.6rem;
+  margin: auto;
+  border: 3px solid #fff;
+  background-color: #fff;
+  /*position: relative;*/
+  /*display: none;*/
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  margin-top: -20px;
+  width: 0;
+  height: 0;
+  border-style: solid; 
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent grey transparent transparent;
+  /*left: 0;*/
+}
+#arrow-right {
+  border-width: 30px 0  30px 40px;
+  border-color: transparent transparent transparent grey;
+  position: absolute;
+  right: 108px;;
+  /*margin-right: 30px;*/
+  /*margin: 0 auto;*/
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
+/*애니메이션*/
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-In {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+.wrapper {
+  display: none;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.container-2 button {
+  width: 6rem;
+  height: 4rem;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.wrapper button {
+  width: 2rem;
+  height: 2rem;
+  border:  0;
+  cursor: pointer;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+}
+
+.wrapper button:hover {
+  padding: 1em 2em;
+  background: #333; 
+  
+}

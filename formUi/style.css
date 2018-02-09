@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body  {
+  background: #a7cfdf;
+  background: radial-gradient(ellipse at center, #a7cfdf 11%,#23538a 91%);
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 );*/
+}
+
+.formset {
+  width: 50%;
+  margin: 10% auto;
+  box-shadow: 0 0 15px 3px 
+  rgba(0,0,0,.2);
+}
+
+.formset .head-part {
+  padding: 30px;
+  background-color: #00184e;
+  color: #fefefe;
+  overflow: hidden;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.formset .head-part h1 {
+  float: left;
+  letter-spacing: 2px;
+}
+
+.formset form {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.formset form label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.formset form > input {
+  height: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.formset form > input,
+.formset form > textarea {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #eee;
+}
+.formset form > textarea {
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.formset form button {
+  font-size: 1rem;
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 18px;
+  letter-spacing: 1px;
+  background: #00184e;
+  color: #fefefe;
+  border: none;
+  border-radius: 2rem;
+}
